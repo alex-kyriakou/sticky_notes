@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Architects Daughter", cursive;
+}
+
+body {
+  background-color: rgba(70, 141, 143, 0.336);
+  font-size: 24px;
+}
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+.btn-container {
+  margin-left: 5%;
+}
+
+.btn {
+  padding: 7px 15px;
+  font-size: 20px;
+  background-color: blueviolet;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 2rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.927) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.368) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.413) 2px 0px 0px 2px inset;
+
+  transition: all 0.1s linear;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.927) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.368) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.198) 2px 0px 0px 2px inset;
+}
+
+.btn:active {
+  box-shadow: rgba(255, 255, 255, 0.413) 0px 0px 0px 2px inset;
+  transform: scale(0.98);
+  border-radius: 6px;
+}
+
+.sticky-note-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+
+.form-container {
+  //   display: none;
+  position: absolute;
+  top: 26%;
+  left: 40%;
+}
+
+textarea {
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.697) 0px 4px 16px,
+    rgba(17, 17, 26, 0.289) 0px 8px 24px, rgba(17, 17, 26, 0.109) 0px 16px 56px;
+  outline: none;
+  border: none;
+  width: 375px;
+  height: 375px;
+  padding: 60px 25px 25px 25px;
+  font-size: 20px;
+}
+
+i {
+  position: absolute;
+  color: grey;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.bx-x-circle {
+  top: 5%;
+  left: 75%;
+}
+.bx-x-circle:hover {
+  color: #fff;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.bx-check-circle {
+  top: 5%;
+  left: 85%;
+}
+
+.bx-check-circle:hover {
+  color: #fff;
+  background-color: green;
+  border-radius: 50%;
+}
