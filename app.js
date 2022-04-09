@@ -1,7 +1,3 @@
-//  form container = container3
-// sticky-note-container = container2
-//
-
 const formContainer = document.querySelector(".form-container");
 const stickyNote = document.querySelector(".sticky-note-container");
 const checkIcon = document.querySelector(".check-icon");
@@ -25,6 +21,33 @@ function typeNote() {
   }
 }
 
+function createNote() {
+  const note = document.createElement("div");
+  const details = document.createElement("h3");
+  let noteText = document.getElementById("note-text").value;
+
+  note.classList.add("noteEl");
+  details.classList.add("details");
+
+  details.innerHTML = noteText;
+  note.appendChild(details);
+
+  stickyNote.insertAdjacentElement("beforeend", note);
+
+  note.style.margin = margin();
+  note.style.transform = rotate();
+  note.style.background = color();
+}
+
+document.querySelector("#note-text").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const text = document.querySelector("#note-text");
+    createNote(text.value);
+
+    text.value = "";
+  }
+});
+
 function margin() {
   let random_margin = ["1px", "-5px", "5px", "10px", "15px", "20px"];
   return random_margin[Math.floor(Math.random() * random_margin.length)];
@@ -46,7 +69,9 @@ function rotate() {
 function color() {
   let random_color = [
     "#bc5cbd",
+    "#d8cc22",
     "#506d9a",
+    "#71ed7a",
     "#e195a5",
     "#f96e00",
     "#e165a4",
