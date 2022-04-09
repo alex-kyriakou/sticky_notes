@@ -33,7 +33,7 @@ body {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.927) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.368) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.413) 2px 0px 0px 2px inset;
+    rgba(255, 255, 255, 0.198) 2px 0px 0px 2px inset;
 
   transition: all 0.1s linear;
 }
@@ -41,13 +41,14 @@ body {
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.927) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.368) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.198) 2px 0px 0px 2px inset;
+    rgba(255, 255, 255, 0.413) 2px 0px 0px 2px inset;
 }
 
 .btn:active {
-  box-shadow: rgba(255, 255, 255, 0.413) 0px 0px 0px 2px inset;
+  box-shadow: rgba(69, 8, 69, 0.133) 3px 3px 6px 0px inset,
+    rgba(71, 8, 70, 0.102) -3px -3px 6px 1px inset;
   transform: scale(0.98);
-  border-radius: 6px;
+  //   border-radius: 6px;
 }
 
 .sticky-note-container {
@@ -59,7 +60,7 @@ body {
 }
 
 .form-container {
-  //   display: none;
+  display: none;
   position: absolute;
   top: 26%;
   left: 40%;
